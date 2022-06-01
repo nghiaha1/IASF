@@ -59,6 +59,8 @@ public class StudentController {
         existingStudent.setEmail(updateStudent.getEmail());
         existingStudent.setPhone(updateStudent.getPhone());
         existingStudent.setAddress(updateStudent.getAddress());
+        existingStudent.setDob(updateStudent.getDob());
+        existingStudent.setStatus(updateStudent.getStatus());
         return existingStudent;
     }
 
