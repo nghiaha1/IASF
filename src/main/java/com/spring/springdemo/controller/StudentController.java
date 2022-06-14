@@ -6,12 +6,15 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 /**
  * /v1/students         | GET           | return list student
  * /v1/students         | POST          | create new student
  * /v1/students/id      | PUT           | edit student
  * /v1/students/id      | DELETE        | remove student
  * /v1/students/id      | GET           | find student by id
+ *
  * */
 
 @RestController
@@ -56,6 +59,8 @@ public class StudentController {
         existingStudent.setEmail(updateStudent.getEmail());
         existingStudent.setPhone(updateStudent.getPhone());
         existingStudent.setAddress(updateStudent.getAddress());
+        existingStudent.setDob(updateStudent.getDob());
+        existingStudent.setStatus(updateStudent.getStatus());
         return existingStudent;
     }
 
